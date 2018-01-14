@@ -5,7 +5,7 @@ import './avatar.css'
 export default class Avatar extends Component {
     render() {
         return (
-            <Image src='resources/avatar.jpg' circle/>
+            <Image class='avatar' src='resources/avatar.jpg' circle/>
         )
     }
 }
