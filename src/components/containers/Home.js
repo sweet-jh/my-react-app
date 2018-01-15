@@ -3,14 +3,14 @@ import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import Header from '../header/Header'
 import Footer from '../footer/Footer'
+import Properties from '../properties/Properties'
 
 class Home extends Component {
     render() {
         return (
             <div>
                 <Header />
-
-
+                <Properties/>
                 <Footer />
             </div>
         );
