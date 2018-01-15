@@ -7,22 +7,22 @@ export default class Property extends Component {
         return (
             <Row className="property">
                 <Col xs={3} md={3} sm={2}>
-                    <Image className='property-img' src={this.props.src}/>
+                    <Image className='property-img' src={this.props.propertyDetails.picture}/>
                 </Col>
                 <Col xs={6} md={6} sm={2}>
-                    <span>{this.props.street}</span>
-                    <span>{this.props.address}</span>
-                    <span>{this.props.type}</span>
-                    <span>{this.props.details}</span>
-                    <span>ID#{this.props.id}</span>
-                    <span>${this.props.price}pw</span>
-                    <span>Bond: ${this.props.bond}</span>
-                    <span>Available: ${this.props.available}</span>
+                    <span>{this.props.propertyDetails.street}</span>
+                    <span>{this.props.propertyDetails.address}</span>
+                    <span>{this.props.propertyDetails.type}</span>
+                    <span>{this.props.propertyDetails.details}</span>
+                    <span>ID#{this.props.propertyDetails.id}</span>
+                    <span>${this.props.propertyDetails.price}pw</span>
+                    <span>Bond: ${this.props.propertyDetails.bond}</span>
+                    <span>Available: ${this.props.propertyDetails.available}</span>
                 </Col>
                 <Col xs={3} md={3} sm={2}>
-                    <a href='###'><span>{this.props.applicationCount} New Applications</span></a>
-                    <a href='###'><span>{this.props.shortlisted} Shortlisted</span></a>
-                    <a href='###'><span>{this.props.total} Total</span></a>
+                    <a href='###'><span>{this.props.applicationDetails.applicationCount} New Applications</span></a>
+                    <a href='###'><span>{this.props.applicationDetails.shortlisted} Shortlisted</span></a>
+                    <a href='###'><span>{this.props.applicationDetails.total} Total</span></a>
                 </Col>
             </Row>
         )
