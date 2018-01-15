@@ -20,8 +20,7 @@ export default class Header extends Component {
                     <Row>
                         <Col xs={12} md={12} sm={6}>
                             <div className="header-content">
-                                <Avatar src='https://specials-images.forbesimg.com/imageserve/188085970/960x0.jpg'
-                                        userName='Avatar'/>
+                                <Avatar src='http://img.wowoqq.com/allimg/170524/1-1F5240H152-52.jpg' userName='Avatar'/>
                             </div>
                         </Col>
                     </Row>

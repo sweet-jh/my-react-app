@@ -7,7 +7,7 @@ export default class Properties extends Component {
     constructor() {
         super();
         this.propertyDetails = {
-            picture: 'https://specials-images.forbesimg.com/imageserve/188085970/960x0.jpg',
+            picture: 'https://i.ytimg.com/vi/Xx6t0gmQ_Tw/maxresdefault.jpg',
             street: '1/784 Smith Street',
             address: 'Fitzroy, VIC 3065',
             type: 'House',

@@ -8,8 +8,30 @@
     img {
       height: 100%;
     }
-    span {
-      display: block;
+    .avatar.row {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      height: 30px;
+      .avatar-wrapper {
+        height: 30px;
+        width: 30px;
+      }
+    }
+    .propertyDetails {
+      display: inline-block;
+      float: left;
+      padding: 20px;
+      span {
+        display: block;
+      }
+      &.position {
+        float: left;
+      }
+      &.other {
+        float: right;
+        text-align: right;
+      }
     }
   }
 }

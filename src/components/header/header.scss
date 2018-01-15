@@ -43,6 +43,13 @@
       background-color: #00A4C7;
       .avatar.row {
         float: right;
+        position: relative;
+        top: 10px;
+        right: 30px;
+        .avatar-wrapper {
+          height: 50px;
+          width: 50px;
+        }
       }
     }
     .header-search-bar {
