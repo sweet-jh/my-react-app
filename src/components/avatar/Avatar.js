@@ -1,11 +1,14 @@
 import React, {Component} from 'react'
-import {Image} from 'react-bootstrap'
+import {Row, Image} from 'react-bootstrap'
 import './avatar.css'
 
 export default class Avatar extends Component {
     render() {
         return (
-            <Image className='avatar' src='resources/avatar.jpg' circle/>
+            <Row className="avatar">
+                <Image className='avatar-icon' src={this.props.src} circle/>
+                <span className='avatar-name'>{this.props.userName}</span>
+            </Row>
         )
     }
 }

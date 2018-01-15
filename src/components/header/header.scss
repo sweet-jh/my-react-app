@@ -1,34 +1,64 @@
 .header {
-    background: #333f48;
+    background: #FFFFFF;
     width: 100%;
     user-select: none;
+    border-bottom: 2px solid #DCE0E3;
 
-    .crumbs {
-        height: 30px;
-        position: relative;
-        display: flex;
-        align-items: center;
-
-        span {
-            display: inline-block;
+    .container {
+        max-width: unset;
+        padding: 0;
+        .crumbs {
+            background: #333f48;
+            height: 30px;
             position: relative;
-            height: 100%;
+            display: flex;
+            align-items: center;
 
-            &::before {
-                content: ' ';
-                position: absolute;
-                top: 0;
-                width: 1px;
+            span {
+                display: inline-block;
+                position: relative;
                 height: 100%;
-                background: #4b575e;
-            }
 
-            a {
-                margin: 0 20px;
-                color: #fff;
-                font-size: 12px;
-                text-decoration: none;
-                vertical-align: bottom;
+                &::before {
+                    content: ' ';
+                    position: absolute;
+                    top: 0;
+                    width: 1px;
+                    height: 100%;
+                    background: #4b575e;
+                }
+
+                a {
+                    margin: 0 20px;
+                    color: #fff;
+                    font-size: 12px;
+                    text-decoration: none;
+                    vertical-align: bottom;
+                }
+            }
+        }
+        .header-content {
+            height: 72px;
+            width: 100%;
+            background-color: #00A4C7;
+        }
+        .header-search-bar {
+            height: 66px;
+            width: 100%;
+            background-color: #FFFFFF;
+            float: right;
+
+            input {
+                height: 100%;
+                width: 400px;
+                padding: 0 20px;
+                float: right;
+                border-left: 1px solid #DCE0E3;
+                border-right: 1px solid #DCE0E3;
+                border-top: none;
+                border-bottom: none;
+                color: #697684;
+                font-size: 0.9em;
             }
         }
     }
