@@ -41,6 +41,9 @@
             height: 72px;
             width: 100%;
             background-color: #00A4C7;
+            .avatar.row {
+                float: right;
+            }
         }
         .header-search-bar {
             height: 66px;
