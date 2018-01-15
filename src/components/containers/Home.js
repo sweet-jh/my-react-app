@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
-import { withRouter } from 'react-router-dom'
+import React, {Component} from 'react'
+import {connect} from 'react-redux'
+import {withRouter} from 'react-router-dom'
 import Header from '../header/Header'
 import Footer from '../footer/Footer'
 import Properties from '../properties/Properties'
@@ -9,9 +9,9 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <Header />
+                <Header/>
                 <Properties/>
-                <Footer />
+                <Footer/>
             </div>
         );
     }
