@@ -4,11 +4,12 @@ import {withRouter} from 'react-router-dom'
 import Header from '../header/Header'
 import Footer from '../footer/Footer'
 import Properties from '../properties/Properties'
+import './home.css'
 
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div className='default-font'>
                 <Header/>
                 <Properties/>
                 <Footer/>

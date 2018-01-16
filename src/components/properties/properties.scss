@@ -1,4 +1,29 @@
-.properties.row {
+.properties {
   margin: 0 auto;
   width: 1200px;
+  .title.row {
+    display: block;
+    h2 {
+      font-weight: 400;
+      margin-top: 40px;
+      vertical-align: bottom;
+    }
+    div {
+      height: 45px;
+      span {
+        line-height: 45px;
+        &.sml-font {
+          font-size: 0.8rem;
+          color: #697684;
+        }
+      }
+      .button-group {
+        display: inline-block;
+        float: right;
+        .btn-default {
+          border: 1px solid #4B575E;
+        }
+      }
+    }
+  }
 }

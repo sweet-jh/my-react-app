@@ -1,7 +1,8 @@
 .property.row {
   width: 100%;
   height: 160px;
-  margin: 0;
+  margin: 15px 0 0;
+  background-color: #FFFFFF;
 
   div {
     height: 100%;
@@ -10,8 +11,8 @@
     }
     .avatar.row {
       position: absolute;
-      bottom: 15px;
-      left: 15px;
+      bottom: 10px;
+      left: 40px;
       height: 30px;
       .avatar-wrapper {
         height: 30px;
@@ -24,6 +25,31 @@
       padding: 20px;
       span {
         display: block;
+        &.big-font {
+          font-size: 1.5rem;
+        }
+        &.mid-font {
+          font-size: 1rem;
+          color: #4B575E;
+        }
+        &.sml-font {
+          font-size: 0.8rem;
+          color: #697684;
+        }
+      }
+      a {
+        span{
+          margin-top: 8px;
+        }
+
+        &:first-child {
+          color: #2B6ED2;
+          span {
+            border-bottom: 1px solid #4B575E;
+            padding: 0 25px 15px 0;
+            margin-top: 0;
+          }
+        }
       }
       &.position {
         float: left;
@@ -31,6 +57,9 @@
       &.other {
         float: right;
         text-align: right;
+      }
+      &.application {
+        border-left: 3px solid #F0F2F5;
       }
     }
   }

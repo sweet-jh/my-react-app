@@ -44,11 +44,14 @@
       .avatar.row {
         float: right;
         position: relative;
-        top: 10px;
+        top: 22px;
         right: 30px;
         .avatar-wrapper {
-          height: 50px;
-          width: 50px;
+          height: 30px;
+          width: 30px;
+          .avatar-icon {
+            border: 2px solid #FFFFFF;
+          }
         }
       }
     }

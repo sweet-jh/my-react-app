@@ -13,23 +13,23 @@ export default class Property extends Component {
                 </Col>
                 <Col xs={6} md={6} sm={2}>
                     <div className='propertyDetails position'>
-                        <span>{this.props.propertyDetails.street}</span>
-                        <span>{this.props.propertyDetails.address}</span>
-                        <span>{this.props.propertyDetails.type}</span>
-                        <span>{this.props.propertyDetails.details}</span>
-                        <span>ID#{this.props.propertyDetails.id}</span>
+                        <span className='big-font'>{this.props.propertyDetails.street}</span>
+                        <span className='mid-font'>{this.props.propertyDetails.address}</span>
+                        <span className='sml-font'>{this.props.propertyDetails.type}</span>
+                        <span className='mid-font'>{this.props.propertyDetails.details}</span>
+                        <span className='sml-font'>ID#{this.props.propertyDetails.id}</span>
                     </div>
                     <div className='propertyDetails other'>
-                        <span>${this.props.propertyDetails.price}pw</span>
-                        <span>Bond: ${this.props.propertyDetails.bond}</span>
-                        <span>Available: ${this.props.propertyDetails.available}</span>
+                        <span className='big-font'>${this.props.propertyDetails.price}pw</span>
+                        <span className='mid-font'>Bond: ${this.props.propertyDetails.bond}</span>
+                        <span className='sml-font'>Available: ${this.props.propertyDetails.available}</span>
                     </div>
                 </Col>
                 <Col xs={3} md={3} sm={2}>
-                    <div className='propertyDetails'>
+                    <div className='propertyDetails application'>
                         <a href='###'><span>{this.props.applicationDetails.applicationCount} New Applications</span></a>
-                        <a href='###'><span>{this.props.applicationDetails.shortlisted} Shortlisted</span></a>
-                        <a href='###'><span>{this.props.applicationDetails.total} Total</span></a>
+                        <a href='###'><span className='mid-font'>{this.props.applicationDetails.shortlisted} Shortlisted</span></a>
+                        <a href='###'><span className='mid-font'>{this.props.applicationDetails.total} Total</span></a>
                     </div>
                 </Col>
             </Row>
