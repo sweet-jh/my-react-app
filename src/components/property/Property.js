@@ -7,11 +7,11 @@ export default class Property extends Component {
     render() {
         return (
             <Row className="property">
-                <Col xs={3} md={3} sm={2}>
+                <Col lg={3} xs={3} md={12} sm={12}>
                     <Image className='property-img' src={this.props.propertyDetails.picture}/>
                     <Avatar src='http://img.wowoqq.com/allimg/170524/1-1F5240H152-52.jpg' userName='Avatar'/>
                 </Col>
-                <Col xs={6} md={6} sm={2}>
+                <Col lg={6} xs={6} md={12} sm={12}>
                     <div className='propertyDetails position'>
                         <span className='big-font'>{this.props.propertyDetails.street}</span>
                         <span className='mid-font'>{this.props.propertyDetails.address}</span>
@@ -25,7 +25,7 @@ export default class Property extends Component {
                         <span className='sml-font'>Available: ${this.props.propertyDetails.available}</span>
                     </div>
                 </Col>
-                <Col xs={3} md={3} sm={2}>
+                <Col lg={3} xs={3} md={12} sm={12}>
                     <div className='propertyDetails application'>
                         <a href='###'><span>{this.props.applicationDetails.applicationCount} New Applications</span></a>
                         <a href='###'><span className='mid-font'>{this.props.applicationDetails.shortlisted} Shortlisted</span></a>

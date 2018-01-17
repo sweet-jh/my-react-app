@@ -9,7 +9,7 @@ export default class Header extends Component {
             <div className="header">
                 <Grid>
                     <Row>
-                        <Col lg={12} xs={12} md={12} sm={6}>
+                        <Col lg={12} xs={12} md={12} sm={12}>
                             <div className="crumbs">
                                 <div className='page-width'>
                                     <span><a href="https://www.realestate.com.au/rent"
@@ -20,7 +20,7 @@ export default class Header extends Component {
                         </Col>
                     </Row>
                     <Row>
-                        <Col lg={12} xs={12} md={12} sm={6}>
+                        <Col lg={12} xs={12} md={12} sm={12}>
                             <div className="header-content">
                                 <div className='page-width'>
                                     <Avatar src='http://img.wowoqq.com/allimg/170524/1-1F5240H152-52.jpg'
@@ -30,7 +30,7 @@ export default class Header extends Component {
                         </Col>
                     </Row>
                     <Row>
-                        <Col lg={12} xs={12} md={12} sm={6}>
+                        <Col lg={12} xs={12} md={12} sm={12}>
                             <div className="header-search-bar">
                                 <div className='page-width'>
                                     <input type='text' placeholder='Search by address, suburb or property ID.'/>
