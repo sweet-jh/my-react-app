@@ -2,26 +2,12 @@ import React, {Component} from 'react'
 import {Row, Grid, Button, DropdownButton, MenuItem} from 'react-bootstrap'
 import Property from '../property/Property'
 import './properties.css'
+import data from '../initdata.json';
 
 export default class Properties extends Component {
-    constructor() {
+    constructor(props) {
         super();
-        this.propertyDetails = {
-            picture: 'https://i.ytimg.com/vi/Xx6t0gmQ_Tw/maxresdefault.jpg',
-            street: '1/784 Smith Street',
-            address: 'Fitzroy, VIC 3065',
-            type: 'House',
-            details: [2, 1, 1],
-            id: 'SM1784',
-            price: 450,
-            bond: 2200,
-            available: '12 Feb 2018'
-        };
-        this.applicationDetails = {
-            applicationCount: 2,
-            shortlisted: 2,
-            total: 9
-        };
+        this.properties = data.properties;
     }
 
     render() {
@@ -53,18 +39,14 @@ export default class Properties extends Component {
                     </div>
                     <hr/>
                 </Row>
-                <Row>
-                    <Property
-                        propertyDetails={this.propertyDetails}
-                        applicationDetails={this.applicationDetails}
-                    />
-                </Row>
-                <Row>
-                    <Property
-                        propertyDetails={this.propertyDetails}
-                        applicationDetails={this.applicationDetails}
-                    />
-                </Row>
+                {this.properties.map((property) => {
+                    return (<Row key={property.id}>
+                        <Property
+                            propertyDetails={property}
+                            applicationDetails={property.applications}
+                        />
+                    </Row>)
+                })}
             </Grid>
         )
     }
