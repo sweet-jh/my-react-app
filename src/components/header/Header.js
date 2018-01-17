@@ -1,9 +1,15 @@
 import React, {Component} from 'react'
 import {Grid, Row, Col} from 'react-bootstrap'
 import Avatar from '../avatar/Avatar'
+import data from '../initdata.json'
 import './header.css'
 
 export default class Header extends Component {
+    constructor(props) {
+        super();
+        this.avatar = data.userInfo;
+    }
+
     render() {
         return (
             <div className="header">
@@ -23,8 +29,7 @@ export default class Header extends Component {
                         <Col lg={12} xs={12} md={12} sm={12}>
                             <div className="header-content">
                                 <div className='page-width'>
-                                    <Avatar src='http://img.wowoqq.com/allimg/170524/1-1F5240H152-52.jpg'
-                                            userName='Avatar'/>
+                                    <Avatar src={this.avatar.picture} userName={this.avatar.userName}/>
                                 </div>
                             </div>
                         </Col>
