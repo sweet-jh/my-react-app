@@ -15,8 +15,8 @@
       "bond": "2200",
       "available": "12 Feb 2018",
       "applications": {
-        "applicationCount": "2",
-        "applicationLink": "###",
+        "count": "2",
+        "link": "###",
         "shortlisted": "2",
         "total": "9"
       }
@@ -32,8 +32,8 @@
       "bond": "2200",
       "available": "12 Feb 2018",
       "applications": {
-        "applicationCount": "2",
-        "applicationLink": "###",
+        "count": "2",
+        "link": "###",
         "shortlisted": "2",
         "total": "9"
       }

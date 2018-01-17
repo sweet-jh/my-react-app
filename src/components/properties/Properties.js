@@ -8,6 +8,7 @@ export default class Properties extends Component {
     constructor(props) {
         super();
         this.properties = data.properties;
+        this.avatar = data.userInfo;
     }
 
     render() {
@@ -41,10 +42,7 @@ export default class Properties extends Component {
                 </Row>
                 {this.properties.map((property) => {
                     return (<Row key={property.id}>
-                        <Property
-                            propertyDetails={property}
-                            applicationDetails={property.applications}
-                        />
+                        <Property property={property} avatar={this.avatar} />
                     </Row>)
                 })}
             </Grid>
