@@ -1,12 +1,15 @@
 const faker = require('faker');
 const dateFormat = require('dateformat');
 
-function generateProperties() {
+function generateInitData() {
+    let userInfo = {
+        "name": faker.name.findName(),
+        "picture": faker.image.avatar()
+    };
+
     let properties = [];
 
     for (let id = 0; id < 5; id++) {
-        let name = faker.name.findName();
-
         properties.push({
             "id": id,
             "street": [faker.random.number(256), faker.address.streetName(), 'Street'].join(' '),
@@ -28,9 +31,9 @@ function generateProperties() {
         })
     }
 
-    return {"properties": properties}
+    return {"properties": properties, "user-info": userInfo}
 }
 
 // json-server requires that you export
 // a function which generates the data set
-module.exports = generateProperties
+module.exports = generateInitData
