@@ -9,7 +9,7 @@ import './home.css'
 class Home extends Component {
     render() {
         return (
-            <div className='default-font'>
+            <div className='default-style'>
                 <Header/>
                 <Properties/>
                 <Footer/>
