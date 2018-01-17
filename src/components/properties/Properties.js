@@ -32,7 +32,7 @@ export default class Properties extends Component {
                     <div>
                         <span className='sml-font'>1-20 of 40 properties</span>
                         <div className='button-group'>
-                            <Button>Filters</Button>
+                            <Button className='btn-filter'>Filters</Button>
                             <span className='sml-font'>Sort by:</span>
                             <DropdownButton
                                 className='drop-down-menu'

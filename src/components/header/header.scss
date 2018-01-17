@@ -1,6 +1,4 @@
 .header {
-  background: #FFFFFF;
-  width: 100%;
   user-select: none;
   border-bottom: 2px solid #DCE0E3;
 
@@ -45,7 +43,7 @@
         float: right;
         position: relative;
         top: 22px;
-        right: 30px;
+        right: 15px;
         .avatar-wrapper {
           height: 30px;
           width: 30px;
@@ -73,6 +71,11 @@
         color: #697684;
         font-size: 0.9em;
       }
+    }
+    .page-width {
+      width: 1200px;
+      height: 100%;
+      margin: 0 auto;
     }
   }
 }

@@ -1,6 +1,7 @@
-.properties {
+.properties.container {
   margin: 0 auto;
   width: 1200px;
+  max-width: unset;
   .title.row {
     display: block;
     h2 {
@@ -8,7 +9,7 @@
       margin-top: 40px;
       vertical-align: bottom;
     }
-    div {
+    & > div {
       height: 45px;
       span {
         line-height: 45px;
@@ -22,6 +23,20 @@
         float: right;
         .btn-default {
           border: 1px solid #4B575E;
+          color: #697684;
+        }
+        .btn-filter {
+          margin-right: 20px;
+        }
+        .drop-down-menu {
+          margin-left: 15px;
+        }
+        .open {
+          .dropdown-menu {
+            display: block;
+            left: 15px;
+            padding: 10px 15px;
+          }
         }
       }
     }
