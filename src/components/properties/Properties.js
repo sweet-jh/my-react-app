@@ -1,17 +1,23 @@
 import React, {Component} from 'react'
+import {connect} from 'react-redux'
 import {Row, Grid, Button, DropdownButton, MenuItem} from 'react-bootstrap'
 import Property from '../property/Property'
 import './properties.css'
 import data from '../initdata.json';
 
-export default class Properties extends Component {
+class Properties extends Component {
     constructor(props) {
         super();
-        this.properties = data.properties;
         this.avatar = data.userInfo;
     }
 
     render() {
+        let list = [];
+        if (this.props.data)
+            Object.keys(this.props.data).forEach((key) => {
+                list.push(<Property property={this.props.data[key]} avatar={this.avatar} key={key}/>);
+            });
+
         return (
             <Grid className="properties">
                 <Row className="title">
@@ -40,12 +46,17 @@ export default class Properties extends Component {
                     </div>
                     <hr/>
                 </Row>
-                {this.properties.map((property) => {
-                    return (<Row key={property.id}>
-                        <Property property={property} avatar={this.avatar} />
-                    </Row>)
-                })}
+
+                <div className='properties-detail'>
+                    {list}
+                </div>
             </Grid>
         )
     }
 }
+
+const mapStateToProps = state => ({
+    ui: state.ui,
+});
+
+export default connect(mapStateToProps)(Properties)

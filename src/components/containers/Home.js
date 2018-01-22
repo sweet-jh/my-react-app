@@ -1,17 +1,23 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import {withRouter} from 'react-router-dom'
+import {bindActionCreators} from 'redux'
+import * as propertyActions from '../properties/action'
 import Header from '../header/Header'
 import Footer from '../footer/Footer'
 import Properties from '../properties/Properties'
 import './home.css'
 
 class Home extends Component {
+    componentDidMount() {
+        this.props.actions.getProperties()
+    }
+
     render() {
         return (
             <div className='default-style'>
                 <Header/>
-                <Properties/>
+                <Properties data={this.props.properties}/>
                 <Footer/>
             </div>
         );
@@ -19,7 +25,12 @@ class Home extends Component {
 }
 
 const mapStateToProps = state => ({
-    ui: state.ui
-})
+    ui: state.ui,
+    properties: state.properties
+});
 
-export default withRouter(connect(mapStateToProps)(Home))
+const mapDispatchToProps = dispatch => ({
+    actions: bindActionCreators(propertyActions, dispatch)
+});
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Home))
